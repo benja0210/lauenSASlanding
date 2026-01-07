@@ -794,3 +794,23 @@ body.dark .floating-actions a {
   overflow: hidden;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
+.carousel {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.carousel-track {
+  max-width: 100%;
+}
+
+.floating-actions {
+  right: max(20px, env(safe-area-inset-right));
+}
+* {
+  outline: 1px solid red;
+}
