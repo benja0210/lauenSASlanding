@@ -811,6 +811,3 @@ html, body {
 .floating-actions {
   right: max(20px, env(safe-area-inset-right));
 }
-* {
-  outline: 1px solid red;
-}
