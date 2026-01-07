@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lauen SAS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="#" class="nav-logo">
+        <img src="images/logo.png" alt="Lauen SAS" />
+        <span>LAUEN SAS</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+
+      <div class="nav-links">
+        <a href="#About">Sobre nosotros</a>
+        <a href="#Servicios">Servicios</a>
+        <a href="#Obras">Obras</a>
+        <a href="#Opiniones">Opiniones</a>
+        <a href="#Contacto">Contacto</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="hero">
+      <div class="hero-content">
+        <div class="hero-logo">
+          <img src="images/logo.png" alt="Lauen SAS" class="logo" />
+        </div>
+
+        <div class="hero-text">
+          <h1 class="figtree">LAUEN SAS</h1>
+          <p>Construcción y reformas con compromiso real.</p>
+          <a href="#Contacto" class="btn-primary">Solicitar presupuesto</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path
+          d="
+        M0 60
+        Q 90 20 180 60
+        T 360 60
+        T 540 60
+        T 720 60
+        T 900 60
+        T 1080 60
+        T 1260 60
+        T 1440 60
+      "
+          fill="none"
+        />
+      </svg>
+    </div>
+
+    <!-- SOBRE NOSOTROS -->
+    <section class="section about-wrapper" id="About">
+      <h2>Sobre nosotros</h2>
+
+      <div class="about-layout">
+        <p class="about-text">
+          En Lauen SAS desarrollamos proyectos de construcción y reformas con un
+          enfoque profesional y responsable. Acompañamos cada obra desde su
+          planificación inicial hasta la entrega final, asegurando un proceso
+          ordenado y eficiente.
+          <br /><br />
+          Entendemos que la calidad no se refleja únicamente en el resultado,
+          sino también en la forma de trabajar. Por eso priorizamos la
+          comunicación constante, el cumplimiento de los plazos y la atención a
+          los detalles, brindando a nuestros clientes la seguridad de contar con
+          un equipo confiable y comprometido.
+        </p>
+
+        <aside class="about-ceo" data-animate>
+          <img src="images/ceo.jpg" alt="CEO de Lauen SAS" />
+          <div>
+            <h3>Dirección general</h3>
+            <p>
+              <strong>Ignacio Lorenzo</strong><br />
+              CEO de Lauen SAS<br />
+              +15 años de experiencia
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section light" id="Servicios" data-animate>
+      <h2>Servicios</h2>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <p>Steel Framing</p>
+        </div>
+
+        <div class="service-card">
+          <p>Techos de teja asfáltica</p>
+        </div>
+
+        <div class="service-card">
+          <p>Cielorraso de yeso</p>
+        </div>
+
+        <div class="service-card">
+          <p>Revestimientos en yeso</p>
+        </div>
+
+        <div class="service-card">
+          <p>Tabique de yeso</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARRUSEL OBRAS -->
+    <div class="carousel-wrapper" id="Obras" data-animate>
+      <button class="carousel-btn prev">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#e3e3e3"
+        >
+          <path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z" />
+        </svg>
+      </button>
+
+      <div class="carousel" data-carousel>
+        <div class="carousel-track">
+          <img src="images/obra1.jpg" loading="lazy" />
+          <img src="images/obra2.jpg" loading="lazy" />
+          <img src="images/obra3.jpg" loading="lazy" />
+          <img src="images/obra4.jpg" loading="lazy" />
+          <img src="images/obra5.jpg" loading="lazy" />
+        </div>
+      </div>
+
+      <button class="carousel-btn next">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#e3e3e3"
+        >
+          <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="carousel-dots"></div>
+
+    <!-- CARRUSEL OPINIONES -->
+    <section class="section light">
+      <h2>Opiniones de clientes</h2>
+      <div class="opinions-grid" id="Opiniones" data-animate>
+        <div class="card">
+          <p>“Cumplieron en tiempo y forma. Excelente trabajo.”</p>
+          <span>— Martín R., Montevideo</span>
+        </div>
+        <div class="card">
+          <p>“Muy prolijos y responsables. Recomendables.”</p>
+          <span>— Laura M., Canelones</span>
+        </div>
+        <div class="card">
+          <p>“Volvería a contratarlos sin dudar.”</p>
+          <span>— Diego P., Colonia</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="Contacto" class="section" data-animate>
+      <h2>Contacto</h2>
+      <form class="contact-form" id="contactForm" novalidate>
+        <input
+          type="text"
+          name="name"
+          placeholder="Tu nombre"
+          required
+          minlength="2"
+        />
+
+        <input type="email" name="email" placeholder="Tu email" required />
+
+        <textarea
+          name="message"
+          placeholder="Escribe aquí tu consulta..."
+          required
+          minlength="10"
+        ></textarea>
+
+        <button type="submit" class="btn-primary">Enviar consulta</button>
+
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-item">
+        <img src="images/location.png" alt="Ubicación" />
+        <span>Uruguay</span>
+      </div>
+
+      <a
+        href="https://wa.me/59892714819?text=Hola%21%20Quiero%20comunicarme%20con%20Lauen%20SAS"
+        target="_blank"
+        rel="noopener"
+        class="footer-link"
+      >
+        <div class="footer-item">
+          <img src="images/phone.png" alt="Teléfono" />
+          <span>092 714 819</span>
+        </div>
+      </a>
+
+      <a
+        href="https://www.instagram.com/lauen.sas/"
+        target="_blank"
+        rel="noopener"
+        class="footer-link"
+      >
+        <div class="footer-item">
+          <img src="images/instagram.png" alt="Instagram" />
+          <span>@lauen.sas</span>
+        </div>
+      </a>
+
+      <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=lauensasconstrucciones@gmail.com&su=Consulta%20web"
+        target="_blank"
+        rel="noopener"
+        class="footer-link"
+      >
+        <div class="footer-item">
+          <img src="images/mail.png" alt="Email" />
+          <span>lauensasconstrucciones@gmail.com</span>
+        </div>
+      </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("KPCiT_V40All-hnEI");
+      })();
+    </script>
+
+    <script>
+      const carousel = document.querySelector("[data-carousel]");
+      const track = carousel.querySelector(".carousel-track");
+      const images = track.children;
+      const prev = document.querySelector(".prev");
+      const next = document.querySelector(".next");
+      const dotsContainer = document.querySelector(".carousel-dots");
+
+      let index = 0;
+
+      [...images].forEach((_, i) => {
+        const dot = document.createElement("button");
+        if (i === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => goTo(i));
+        dotsContainer.appendChild(dot);
+      });
+
+      const dots = dotsContainer.children;
+
+      function goTo(i) {
+        index = i;
+        const imgWidth = images[0].clientWidth + 16;
+        carousel.scrollTo({ left: imgWidth * i, behavior: "smooth" });
+
+        [...dots].forEach((d) => d.classList.remove("active"));
+        dots[i].classList.add("active");
+      }
+
+      next.onclick = () => index < images.length - 1 && goTo(index + 1);
+      prev.onclick = () => index > 0 && goTo(index - 1);
+    </script>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+
+      document
+        .querySelectorAll("[data-animate]")
+        .forEach((el) => observer.observe(el));
+    </script>
+    <script>
+      const toggle = document.querySelector(".nav-toggle");
+      const links = document.querySelector(".nav-links");
+
+      toggle.addEventListener("click", () => {
+        links.classList.toggle("open");
+      });
+    </script>
+    <script>
+      const body = document.body;
+      const aboutSection = document.querySelector(".section"); // Sobre nosotros
+
+      let lockedLight = false;
+
+      window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        const mediaQuery = window.matchMedia("(max-width: 768px)");
+        let triggerPoint;
+        if (mediaQuery.matches) {
+          triggerPoint = aboutSection.offsetTop - window.innerHeight * 0.5;
+        } else {
+          triggerPoint = aboutSection.offsetTop - window.innerHeight * 0.6;
+        }
+
+        if (scrollY <= triggerPoint) {
+          body.classList.add("dark");
+          body.classList.remove("light");
+          lockedLight = false;
+        } else {
+          body.classList.add("light");
+          body.classList.remove("dark");
+          lockedLight = true;
+        }
+      });
+
+      // estado inicial
+      body.classList.add("dark");
+    </script>
+
+    <div class="floating-actions">
+      <a href="https://wa.me/59892714819" target="_blank" aria-label="WhatsApp">
+        <img src="images/whatsapp.webp" alt="" />
+      </a>
+
+      <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=lauensasconstrucciones@gmail.com&su=Consulta%20web"
+        aria-label="Email"
+      >
+        <img src="images/gmail.webp" alt="" />
+      </a>
+    </div>
+
+    <script>
+      const form = document.getElementById("contactForm");
+      const status = form.querySelector(".form-status");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        status.textContent = "";
+        status.className = "form-status";
+
+        const inputs = [...form.querySelectorAll("input, textarea")];
+        let valid = true;
+
+        inputs.forEach((field) => {
+          field.classList.remove("error");
+          if (!field.checkValidity()) {
+            field.classList.add("error");
+            valid = false;
+          }
+        });
+
+        if (!valid) {
+          status.textContent = "Comprueba los datos antes de enviar.";
+          status.classList.add("error");
+          return;
+        }
+
+        status.textContent = "Enviando consulta...";
+
+        emailjs
+          .send("service_ggj0f83", "template_oaqc92d", {
+            name: form.name.value,
+            email: form.email.value,
+            message: form.message.value,
+          })
+          .then(() => {
+            status.textContent =
+              "Mensaje enviado. Nos comunicaremos a la brevedad.";
+            status.classList.add("success");
+            form.reset();
+          })
+          .catch(() => {
+            status.textContent =
+              "Hubo un error al enviar el mensaje. Intentalo de nuevo más tarde.";
+            status.classList.add("error");
+          });
+      });
+    </script>
+  </body>
+</html>
