@@ -811,3 +811,8 @@ html, body {
 .floating-actions {
   right: max(20px, env(safe-area-inset-right));
 }
+
+:focus-visible {
+  outline: 3px solid #0e2842;
+  outline-offset: 3px;
+}

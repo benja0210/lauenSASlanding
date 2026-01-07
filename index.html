@@ -3,6 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lauen SAS es una empresa de construcción y reformas en Uruguay. Obras residenciales y comerciales con compromiso, calidad y cumplimiento."
+    />
+    <meta property="og:title" content="Lauen SAS - Construcción y reformas">
+<meta property="og:description" content="Obras residenciales y comerciales en Uruguay. Calidad, compromiso y experiencia.">
+<meta property="og:image" content="https://benja0210.github.io/lauenSASlanding/images/logo.png">
+<meta property="og:type" content="website">
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://benja0210.github.io/lauenSASlanding/</loc>
+  </url>
+</urlset>
     <title>Lauen SAS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +32,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -36,26 +52,26 @@
         <a href="#Contacto">Contacto</a>
       </div>
     </nav>
+    <main>
+      <!-- HERO -->
+      <header class="hero" id="hero">
+        <div class="hero-content">
+          <div class="hero-logo">
+            <img src="images/logo.png" alt="Lauen SAS" class="logo" />
+          </div>
 
-    <!-- HERO -->
-    <header class="hero" id="hero">
-      <div class="hero-content">
-        <div class="hero-logo">
-          <img src="images/logo.png" alt="Lauen SAS" class="logo" />
+          <div class="hero-text">
+            <h1 class="figtree">LAUEN SAS</h1>
+            <p>Construcción y reformas con compromiso real.</p>
+            <a href="#Contacto" class="btn-primary">Solicitar presupuesto</a>
+          </div>
         </div>
+      </header>
 
-        <div class="hero-text">
-          <h1 class="figtree">LAUEN SAS</h1>
-          <p>Construcción y reformas con compromiso real.</p>
-          <a href="#Contacto" class="btn-primary">Solicitar presupuesto</a>
-        </div>
-      </div>
-    </header>
-
-    <div class="wave-divider">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-        <path
-          d="
+      <div class="wave-divider">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path
+            d="
         M0 60
         Q 90 20 180 60
         T 360 60
@@ -66,153 +82,166 @@
         T 1260 60
         T 1440 60
       "
-          fill="none"
-        />
-      </svg>
-    </div>
+            fill="none"
+          />
+        </svg>
+      </div>
 
-    <!-- SOBRE NOSOTROS -->
-    <section class="section about-wrapper" id="About">
-      <h2>Sobre nosotros</h2>
+      <!-- SOBRE NOSOTROS -->
+      <section class="section about-wrapper" id="About">
+        <h2>Sobre nosotros</h2>
 
-      <div class="about-layout">
-        <p class="about-text">
-          En Lauen SAS desarrollamos proyectos de construcción y reformas con un
-          enfoque profesional y responsable. Acompañamos cada obra desde su
-          planificación inicial hasta la entrega final, asegurando un proceso
-          ordenado y eficiente.
-          <br /><br />
-          Entendemos que la calidad no se refleja únicamente en el resultado,
-          sino también en la forma de trabajar. Por eso priorizamos la
-          comunicación constante, el cumplimiento de los plazos y la atención a
-          los detalles, brindando a nuestros clientes la seguridad de contar con
-          un equipo confiable y comprometido.
-        </p>
+        <div class="about-layout">
+          <p class="about-text">
+            En Lauen SAS desarrollamos proyectos de construcción y reformas con
+            un enfoque profesional y responsable. Acompañamos cada obra desde su
+            planificación inicial hasta la entrega final, asegurando un proceso
+            ordenado y eficiente.
+            <br /><br />
+            Entendemos que la calidad no se refleja únicamente en el resultado,
+            sino también en la forma de trabajar. Por eso priorizamos la
+            comunicación constante, el cumplimiento de los plazos y la atención
+            a los detalles, brindando a nuestros clientes la seguridad de contar
+            con un equipo confiable y comprometido.
+          </p>
 
-        <aside class="about-ceo" data-animate>
-          <img src="images/ceo.jpg" alt="CEO de Lauen SAS" />
-          <div>
-            <h3>Dirección general</h3>
-            <p>
-              <strong>Ignacio Lorenzo</strong><br />
-              CEO de Lauen SAS<br />
-              +15 años de experiencia
-            </p>
+          <aside class="about-ceo" data-animate>
+            <img src="images/ceo.jpg" alt="CEO de Lauen SAS" />
+            <div>
+              <h3>Dirección general</h3>
+              <p>
+                <strong>Ignacio Lorenzo</strong><br />
+                CEO de Lauen SAS<br />
+                +15 años de experiencia
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section light" id="Servicios" data-animate>
+        <h2>Servicios</h2>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <p>Steel Framing</p>
           </div>
-        </aside>
+
+          <div class="service-card">
+            <p>Techos de teja asfáltica</p>
+          </div>
+
+          <div class="service-card">
+            <p>Cielorraso de yeso</p>
+          </div>
+
+          <div class="service-card">
+            <p>Revestimientos en yeso</p>
+          </div>
+
+          <div class="service-card">
+            <p>Tabique de yeso</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARRUSEL OBRAS -->
+      <div class="carousel-wrapper" id="Obras" data-animate>
+        <button class="carousel-btn prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e3e3e3"
+          >
+            <path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z" />
+          </svg>
+        </button>
+
+        <div class="carousel" data-carousel>
+          <div class="carousel-track">
+            <img
+              src="images/obra1.jpg"
+              loading="lazy"
+              alt="Reforma de edificio moderno"
+            />
+            <img
+              src="images/obra2.jpg"
+              loading="lazy"
+              alt="Defensor Sporting Club"
+            />
+            <img src="images/obra3.jpg" loading="lazy" alt="Antel" />
+            <img src="images/obra4.jpg" loading="lazy" alt="Casa particular" />
+            <img
+              src="images/obra5.jpg"
+              loading="lazy"
+              alt="Plaza de toros, Colonia"
+            />
+          </div>
+        </div>
+
+        <button class="carousel-btn next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e3e3e3"
+          >
+            <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+          </svg>
+        </button>
       </div>
-    </section>
 
-    <section class="section light" id="Servicios" data-animate>
-      <h2>Servicios</h2>
+      <div class="carousel-dots"></div>
 
-      <div class="services-grid">
-        <div class="service-card">
-          <p>Steel Framing</p>
+      <!-- CARRUSEL OPINIONES -->
+      <section class="section light">
+        <h2>Opiniones de clientes</h2>
+        <div class="opinions-grid" id="Opiniones" data-animate>
+          <div class="card">
+            <p>“Cumplieron en tiempo y forma. Excelente trabajo.”</p>
+            <span>— Martín R., Montevideo</span>
+          </div>
+          <div class="card">
+            <p>“Muy prolijos y responsables. Recomendables.”</p>
+            <span>— Laura M., Canelones</span>
+          </div>
+          <div class="card">
+            <p>“Volvería a contratarlos sin dudar.”</p>
+            <span>— Diego P., Colonia</span>
+          </div>
         </div>
+      </section>
 
-        <div class="service-card">
-          <p>Techos de teja asfáltica</p>
-        </div>
+      <!-- CONTACTO -->
+      <section id="Contacto" class="section" data-animate>
+        <h2>Contacto</h2>
+        <form class="contact-form" id="contactForm" novalidate>
+          <input
+            type="text"
+            name="name"
+            placeholder="Tu nombre"
+            required
+            minlength="2"
+          />
 
-        <div class="service-card">
-          <p>Cielorraso de yeso</p>
-        </div>
+          <input type="email" name="email" placeholder="Tu email" required />
 
-        <div class="service-card">
-          <p>Revestimientos en yeso</p>
-        </div>
+          <textarea
+            name="message"
+            placeholder="Escribe aquí tu consulta..."
+            required
+            minlength="10"
+          ></textarea>
 
-        <div class="service-card">
-          <p>Tabique de yeso</p>
-        </div>
-      </div>
-    </section>
+          <button type="submit" class="btn-primary">Enviar consulta</button>
 
-    <!-- CARRUSEL OBRAS -->
-    <div class="carousel-wrapper" id="Obras" data-animate>
-      <button class="carousel-btn prev">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="24px"
-          viewBox="0 -960 960 960"
-          width="24px"
-          fill="#e3e3e3"
-        >
-          <path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z" />
-        </svg>
-      </button>
-
-      <div class="carousel" data-carousel>
-        <div class="carousel-track">
-          <img src="images/obra1.jpg" loading="lazy" />
-          <img src="images/obra2.jpg" loading="lazy" />
-          <img src="images/obra3.jpg" loading="lazy" />
-          <img src="images/obra4.jpg" loading="lazy" />
-          <img src="images/obra5.jpg" loading="lazy" />
-        </div>
-      </div>
-
-      <button class="carousel-btn next">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="24px"
-          viewBox="0 -960 960 960"
-          width="24px"
-          fill="#e3e3e3"
-        >
-          <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
-        </svg>
-      </button>
-    </div>
-
-    <div class="carousel-dots"></div>
-
-    <!-- CARRUSEL OPINIONES -->
-    <section class="section light">
-      <h2>Opiniones de clientes</h2>
-      <div class="opinions-grid" id="Opiniones" data-animate>
-        <div class="card">
-          <p>“Cumplieron en tiempo y forma. Excelente trabajo.”</p>
-          <span>— Martín R., Montevideo</span>
-        </div>
-        <div class="card">
-          <p>“Muy prolijos y responsables. Recomendables.”</p>
-          <span>— Laura M., Canelones</span>
-        </div>
-        <div class="card">
-          <p>“Volvería a contratarlos sin dudar.”</p>
-          <span>— Diego P., Colonia</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="Contacto" class="section" data-animate>
-      <h2>Contacto</h2>
-      <form class="contact-form" id="contactForm" novalidate>
-        <input
-          type="text"
-          name="name"
-          placeholder="Tu nombre"
-          required
-          minlength="2"
-        />
-
-        <input type="email" name="email" placeholder="Tu email" required />
-
-        <textarea
-          name="message"
-          placeholder="Escribe aquí tu consulta..."
-          required
-          minlength="10"
-        ></textarea>
-
-        <button type="submit" class="btn-primary">Enviar consulta</button>
-
-        <p class="form-status" aria-live="polite"></p>
-      </form>
-    </section>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -354,14 +383,14 @@
 
     <div class="floating-actions">
       <a href="https://wa.me/59892714819" target="_blank" aria-label="WhatsApp">
-        <img src="images/whatsapp.webp" alt="" />
+        <img src="images/whatsapp.webp" alt="WhatsApp" />
       </a>
 
       <a
         href="https://mail.google.com/mail/?view=cm&fs=1&to=lauensasconstrucciones@gmail.com&su=Consulta%20web"
         aria-label="Email"
       >
-        <img src="images/gmail.webp" alt="" />
+        <img src="images/gmail.webp" alt="Gmail" />
       </a>
     </div>
 
