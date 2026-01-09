@@ -11,7 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-
 * {
   box-sizing: border-box;
 }
@@ -26,7 +25,6 @@ body {
   color: var(--text-color);
   transition: background-color 1s ease, color 1s ease;
 }
-
 
 body {
   margin: 0;
@@ -81,7 +79,6 @@ body {
   }
 }
 
-
 .hero h1 {
   font-size: clamp(2.6rem, 5vw, 4rem);
   margin: 0.8rem 0;
@@ -94,7 +91,6 @@ body {
   margin: 0 auto 2.5rem;
   color: #444;
 }
-
 
 .hero-content {
   position: relative;
@@ -123,7 +119,6 @@ body {
 .section {
   padding: 3rem 1.5rem;
 }
-
 
 h2 {
   text-align: center;
@@ -254,7 +249,7 @@ h2 {
 }
 
 .nav-logo img {
-  width: 36px;   /* CLAVE */
+  width: 36px; /* CLAVE */
   height: auto;
 }
 
@@ -266,7 +261,7 @@ h2 {
 .nav-links a {
   text-decoration: none;
   color: var(--blue);
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
 }
 
@@ -292,7 +287,6 @@ h2 {
   scrollbar-width: none;
 }
 
-
 .footer-item {
   display: flex;
   align-items: center;
@@ -303,7 +297,7 @@ h2 {
   width: 20px;
   height: 20px;
   object-fit: contain;
-  border-radius:20%;
+  border-radius: 20%;
 }
 
 .hero-content {
@@ -339,7 +333,6 @@ h2 {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
-
 .carousel-wrapper {
   position: relative;
   display: flex;
@@ -366,7 +359,6 @@ h2 {
   display: block;
   pointer-events: none;
 }
-
 
 .carousel-dots {
   display: flex;
@@ -461,7 +453,6 @@ body.dark .hero-text p {
   color: #ffffff;
 }
 
-
 .footer a {
   text-decoration: none;
   color: inherit;
@@ -486,10 +477,7 @@ body.dark .hero-text p {
   font-weight: 600;
   text-decoration: none;
   display: inline-block;
-  transition: 
-    background-color 0.3s ease,
-    color 0.3s ease,
-    transform 0.2s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
 body.dark .btn-primary {
@@ -513,10 +501,7 @@ body.light .btn-primary:hover {
 }
 
 .btn-primary {
-  transition:
-    background-color 0.4s ease,
-    color 0.4s ease,
-    transform 0.2s ease;
+  transition: background-color 0.4s ease, color 0.4s ease, transform 0.2s ease;
 }
 
 html {
@@ -541,12 +526,7 @@ html {
     font-size: 1.5rem;
     padding: 1rem 2.4rem;
   }
-
-  
 }
-
-
-
 
 .wave-divider {
   position: relative;
@@ -560,11 +540,10 @@ html {
 }
 
 .wave-divider path {
-  stroke-width: 70px;
+  stroke-width: 30px;
   stroke-linecap: round;
   stroke-linejoin: round;
   transition: stroke 1s ease;
-  filter: drop-shadow(0 5px 1px rgba(0, 0, 0, 0.472));
 }
 
 body.dark .wave-divider path {
@@ -588,7 +567,6 @@ body.light .wave-divider path {
   }
 }
 
-
 .services-grid {
   display: grid;
   gap: 1.5rem;
@@ -603,8 +581,6 @@ body.light .wave-divider path {
   justify-self: center;
 }
 
-
-
 .service-card {
   max-width: 360px;
   width: 100%;
@@ -612,21 +588,24 @@ body.light .wave-divider path {
 
 
 
-
-
-.service-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  text-align: center;
-}
-
 .service-card h3 {
   margin-bottom: 0.5rem;
 }
 
+#About {
+  box-shadow: 0px 60px 55px rgba(0, 0, 0, 0.648);
+  z-index: 10;
+  position: relative;
+  padding-bottom: 10rem;
+  padding-top: 7.5rem;
+}
 
+
+#Obras {
+  box-shadow: 0px -60px 55px rgba(0, 0, 0, 0.648);
+  z-index: 10;
+  position: relative;
+}
 .about-layout {
   display: grid;
   gap: 5rem;
@@ -674,7 +653,6 @@ body.light .wave-divider path {
   gap: 5.5rem;
 }
 
-
 .about-ceo img {
   width: 120px;
   height: 120px;
@@ -682,21 +660,17 @@ body.light .wave-divider path {
   border-radius: 50%;
 }
 
-
 .about-ceo {
   padding: 1.5rem;
   border-radius: 16px;
   background: rgba(0, 0, 0, 0.108);
 }
 
-
 @media (min-width: 900px) {
   .about-layout {
     gap: 3.5rem;
   }
 }
-
-
 
 @media (max-width: 600px) {
   .about-ceo {
@@ -723,7 +697,7 @@ body.light .wave-divider path {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   transition: transform 0.2s ease;
 }
 
@@ -743,21 +717,21 @@ body.dark .floating-actions a {
   background-color: white;
 }
 
-
 .service-card {
-  background: white;
+  background-image: url(images/glass.png);
   padding: 1.5rem;
   border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border: 1.5px solid rgb(14 40 66);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   text-align: center;
+  filter: brightness(150%) contrast(120%);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  box-shadow: 0 20px 40px rgb(0, 0, 0);
+  transform: translateY(-5px);
 }
-
 
 @media (max-width: 768px) {
   .about-layout {
@@ -781,6 +755,7 @@ body.dark .floating-actions a {
 }
 
 .form-status {
+  text-align: center;
   margin-top: 0.8rem;
   font-size: 0.95rem;
   min-height: 1.2em;
@@ -797,7 +772,8 @@ body.dark .floating-actions a {
   overflow: hidden;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   overflow-x: hidden !important;
 }
@@ -822,4 +798,149 @@ html, body {
 
 .hero {
   padding-top: 4rem;
+}
+
+#Servicios {
+  background-color: #c3c6c9;
+  background-image: url("images/34.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#Servicios::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Capa oscura semitransparente (negro con 0.5 de opacidad) */
+    background-color: rgba(0, 0, 0, 0.5); 
+    /* Asegura que la capa esté detrás del contenido (como el h1) */
+    z-index: 0; 
+}
+
+#Servicios h2 {
+  color: white;
+}
+
+.before-after-grid {
+  display: grid;
+  gap: 2.5rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.before-after {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* cuadrado */
+  overflow: hidden;
+  border-radius: 20px;
+  background: #000;
+}
+
+.before-after img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* capa AFTER */
+.before-after .after {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 100% 0 0); /* empieza oculto */
+  transition: none;
+}
+
+.before-after input[type="range"] {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  z-index: 10;
+  accent-color: var(--accent);
+}
+
+.before-after-playground {
+  background: #0e2842;
+  color: white;
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 1rem;
+}
+
+.before-after-playground h2 {
+  margin-bottom: 0.3rem;
+  font-size: 2rem;
+}
+
+.before-after-playground .subtitle {
+  opacity: 0.85;
+  margin-bottom: 1.5rem;
+}
+
+.before-after-playground select {
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.playground-view {
+  max-width: 420px;
+  margin: auto;
+}
+
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Capa oscura semitransparente (negro con 0.5 de opacidad) */
+    background-color: rgba(255, 255, 255, 0.5); 
+    /* Asegura que la capa esté detrás del contenido (como el h1) */
+    z-index: 0; 
+    border-radius: 18px;
+}
+
+
+
+#Obras {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.service-card h3{
+  position: relative;
+  z-index: 10;
+  color: #0e2842;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.service-card p {
+  color: #091929;
+  position: relative;
+  z-index: 10;
+  font-weight: 600;
+}
+
+#Servicios h2 {
+  position: relative;
+  z-index: 10;
+  
 }

@@ -18,7 +18,6 @@
     />
     <meta property="og:type" content="website" />
 
-    
     <title>Lauen SAS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,7 +32,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="images/favicon.svg" type="image/svg" />
+    <link rel="icon" href="images/logo.svg" type="image/svg" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -72,18 +71,10 @@
       <div class="wave-divider">
         <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
           <path
-            d="
-        M0 60
-        Q 90 20 180 60
-        T 360 60
-        T 540 60
-        T 720 60
-        T 900 60
-        T 1080 60
-        T 1260 60
-        T 1440 60
-      "
+            d="M0 60 L1440 60"
             fill="none"
+            stroke="currentColor"
+            stroke-width="2"
           />
         </svg>
       </div>
@@ -146,7 +137,10 @@
 
           <div class="service-card">
             <h3>Steel Framing</h3>
-            <p>Techos de teja asfáltica, cielorrasos de yeso, revestimientos y tabique de yeso</p>
+            <p>
+              Techos de teja asfáltica, cielorrasos de yeso, revestimientos y
+              tabique de yeso
+            </p>
           </div>
         </div>
       </section>
@@ -167,23 +161,30 @@
 
         <div class="carousel" data-carousel>
           <div class="carousel-track">
-            <img
-              src="images/obra1.jpg"
-              loading="lazy"
-              alt="Reforma de edificio moderno"
-            />
-            <img
-              src="images/obra2.jpg"
-              loading="lazy"
-              alt="Defensor Sporting Club"
-            />
-            <img src="images/obra3.jpg" loading="lazy" alt="Antel" />
-            <img src="images/obra4.jpg" loading="lazy" alt="Casa particular" />
-            <img
-              src="images/obra5.jpg"
-              loading="lazy"
-              alt="Plaza de toros, Colonia"
-            />
+            <img src="images/9.jpg" loading="lazy" alt="Obra 9" />
+            <img src="images/6.jpg" loading="lazy" alt="Obra 6" />
+            <img src="images/5.jpg" loading="lazy" alt="Obra 5" />
+            <img src="images/4.jpg" loading="lazy" alt="Obra 4" />
+            <img src="images/1.jpg" loading="lazy" alt="Obra 1" />
+            <img src="images/12.jpg" loading="lazy" alt="Obra 12" />
+            <img src="images/13.jpg" loading="lazy" alt="Obra 13" />
+            <img src="images/16.jpg" loading="lazy" alt="Obra 16" />
+            <img src="images/18.jpg" loading="lazy" alt="Obra 18" />
+            <img src="images/20.jpg" loading="lazy" alt="Obra 20" />
+            <img src="images/21.jpg" loading="lazy" alt="Obra 21" />
+            <img src="images/23.jpg" loading="lazy" alt="Obra 23" />
+            <img src="images/26.jpg" loading="lazy" alt="Obra 26" />
+            <img src="images/27.jpg" loading="lazy" alt="Obra 27" />
+            <img src="images/29.jpg" loading="lazy" alt="Obra 29" />
+            <img src="images/32.jpg" loading="lazy" alt="Obra 32" />
+            <img src="images/33.jpg" loading="lazy" alt="Obra 33" />
+            <img src="images/34.jpg" loading="lazy" alt="Obra 34" />
+            <img src="images/36.jpg" loading="lazy" alt="Obra 36" />
+            <img src="images/38.jpg" loading="lazy" alt="Obra 38" />
+            <img src="images/40.jpg" loading="lazy" alt="Obra 40" />
+            <img src="images/41.jpg" loading="lazy" alt="Obra 41" />
+            <img src="images/42.jpg" loading="lazy" alt="Obra 42" />
+            <img src="images/43.jpg" loading="lazy" alt="Obra 43" />
           </div>
         </div>
 
@@ -201,6 +202,43 @@
       </div>
 
       <div class="carousel-dots"></div>
+
+      <section class="before-after-playground section">
+        <h2>Antes / Después</h2>
+        <p class="subtitle">Seleccioná alguno de nuestros trabajos para conocer sus resultados</p>
+
+        <select id="workSelector" aria-label="Seleccionar obra">
+          <option value="0">1</option>
+          <option value="1">2</option>
+          <option value="2">3</option>
+            <option value="3">4</option>
+            <option value="4">5</option>
+            <option value="5">6</option>
+            <option value="6">7</option>
+            <option value="7">8</option>
+            <option value="8">9</option>
+            <option value="9">10</option>
+            <option value="10">11</option>
+            <option value="11">12</option>
+            <option value="12">13</option>
+            <option value="13">14</option>
+            <option value="14">15</option>
+        </select>
+
+        <div class="before-after playground-view">
+          <img id="beforeImage" src="images/10.jpg" alt="Antes" />
+          <div class="after" id="afterLayer">
+            <img id="afterImage" src="images/9.jpg" alt="Después" />
+          </div>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            id="playgroundSlider"
+          />
+        </div>
+      </section>
 
       <!-- CARRUSEL OPINIONES -->
       <section class="section light">
@@ -252,7 +290,7 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-item">
-        <img src="images/location.png" alt="Ubicación" />
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
         <span>Uruguay</span>
       </div>
 
@@ -263,7 +301,7 @@
         class="footer-link"
       >
         <div class="footer-item">
-          <img src="images/phone.png" alt="Teléfono" />
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
           <span>092 714 819</span>
         </div>
       </a>
@@ -275,7 +313,7 @@
         class="footer-link"
       >
         <div class="footer-item">
-          <img src="images/instagram.png" alt="Instagram" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3.5A4.5 4.5 0 1 0 16.5 12 4.505 4.505 0 0 0 12 7.5zm0 7A2.5 2.5 0 1 1 14.5 12 2.503 2.503 0 0 1 12 14.5zM17.75 6.25a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>
           <span>@lauen.sas</span>
         </div>
       </a>
@@ -287,7 +325,7 @@
         class="footer-link"
       >
         <div class="footer-item">
-          <img src="images/mail.png" alt="Email" />
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
           <span>lauensasconstrucciones@gmail.com</span>
         </div>
       </a>
@@ -446,6 +484,64 @@
               "Hubo un error al enviar el mensaje. Intentalo de nuevo más tarde.";
             status.classList.add("error");
           });
+      });
+    </script>
+
+    <script>
+      document.querySelectorAll(".before-after").forEach((ba) => {
+        const slider = ba.querySelector("input");
+        const after = ba.querySelector(".after");
+
+        // empieza mostrando SOLO el antes
+        slider.value = 0;
+        after.style.clipPath = "inset(0 100% 0 0)";
+
+        slider.addEventListener("input", () => {
+          const value = slider.value;
+          after.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+        });
+      });
+    </script>
+
+    <script>
+      const works = [
+        { before: "10.jpg", after: "9.jpg" },
+        { before: "7.jpg", after: "6.jpg" },
+        { before: "3.jpg", after: "4.jpg" },
+        { before: "15.jpg", after: "12.jpg" },
+        { before: "14.jpg", after: "13.jpg" },
+        { before: "17.jpg", after: "16.jpg" },
+        { before: "19.jpg", after: "18.jpg" },
+        { before: "22.jpg", after: "20.jpg" },
+        { before: "24.jpg", after: "23.jpg" },
+        { before: "25.jpg", after: "26.jpg" },
+        { before: "30.jpg", after: "29.jpg" },
+        { before: "28.jpg", after: "27.jpg" },
+        { before: "31.jpg", after: "32.jpg" },
+        { before: "35.jpg", after: "36.jpg" },
+        { before: "39.jpg", after: "38.jpg" },
+      ];
+
+      const selector = document.getElementById("workSelector");
+      const beforeImg = document.getElementById("beforeImage");
+      const afterImg = document.getElementById("afterImage");
+      const slider = document.getElementById("playgroundSlider");
+      const afterLayer = document.getElementById("afterLayer");
+
+      function loadWork(index) {
+        beforeImg.src = "images/" + works[index].before;
+        afterImg.src = "images/" + works[index].after;
+        slider.value = 0;
+        afterLayer.style.clipPath = "inset(0 100% 0 0)";
+      }
+
+      selector.addEventListener("change", (e) => {
+        loadWork(e.target.value);
+      });
+
+      slider.addEventListener("input", () => {
+        const value = slider.value;
+        afterLayer.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
       });
     </script>
   </body>
