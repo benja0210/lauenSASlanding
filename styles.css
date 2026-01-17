@@ -353,6 +353,10 @@ h2 {
   justify-content: center;
 }
 
+.photos {
+  margin-bottom: 5rem;
+}
+
 .carousel-btn svg {
   width: 20px;
   height: 20px;
@@ -718,7 +722,6 @@ body.dark .floating-actions a {
 }
 
 .service-card {
-  background-image: url(images/glass.png);
   padding: 1.5rem;
   border-radius: 18px;
   border: 1.5px solid rgb(14 40 66);
@@ -911,12 +914,28 @@ body {
     left: 0;
     right: 0;
     /* Capa oscura semitransparente (negro con 0.5 de opacidad) */
-    background-color: rgba(255, 255, 255, 0.5); 
+    background-color: rgba(255, 255, 255, 0.859); 
     /* Asegura que la capa esté detrás del contenido (como el h1) */
     z-index: 0; 
     border-radius: 18px;
 }
 
+.carousel-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 2rem;
+  
+}
+.carousel-counter {
+  font-weight: 600;
+  font-size: 1rem;
+  min-width: 60px;
+  text-align: center;
+  color: var(--text-color);
+}
 
 
 #Obras {
@@ -943,4 +962,192 @@ body {
   position: relative;
   z-index: 10;
   
+}
+
+
+.before-after-section {
+  background: #0e2842;
+  color: white;
+  text-align: center;
+}
+
+.before-after-section .subtitle {
+  opacity: 0.85;
+  margin-bottom: 2rem;
+}
+
+.ba-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.ba-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #000;
+}
+
+.ba-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background: white;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+.ba-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.ba-label {
+  position: absolute;
+  bottom: 10px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.ba-label.before {
+  left: 10px;
+}
+
+.ba-label.after {
+  right: 10px;
+}
+
+.ba-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.ba-pagination button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  color: #0e2842;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.ba-pagination button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 2rem;
+}
+  
+
+.ba-pagination span {
+  min-width: 80px;
+  font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .ba-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ba-item img {
+    height: 200px;
+  }
+}
+.ba-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas = 4 pares */
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 2.5rem auto;
+}
+
+.ba-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.ba-item img {
+  width: 100%;
+  height: 320px; /* MÁS GRANDES */
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 1000px) {
+  .ba-item img {
+    height: 360px;
+  }
+  .ba-placeholder {
+    height: 360px; 
+  }
+}
+
+.ba-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: white;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+
+
+@media (max-width: 768px) {
+  .ba-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ba-item {
+    grid-template-columns: 1fr;
+  }
+
+  .ba-item img {
+    height: 260px;
+  }
+
+  .ba-item::after {
+    display: none; /* nada de línea en mobile */
+  }
+}
+
+.ba-placeholder {
+  align-items: center;
+  justify-content: center;
+  height: 360px; /* mismo alto que las imágenes */
+  border-radius: 18px;
+  background: #0e2842; /* color del fondo */
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 600;
+  text-align: center;
+  padding: 2rem;
+  padding-top: 9rem;
+  border: 2px dashed rgba(255, 255, 255, 0.35);
 }
