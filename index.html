@@ -35,7 +35,6 @@
     <link rel="icon" href="images/logo.svg" type="image/svg" />
   </head>
   <body>
-    <!-- NAVBAR -->
     <nav class="navbar">
       <a href="#" class="nav-logo">
         <img src="images/logo.png" alt="Lauen SAS" />
@@ -53,7 +52,6 @@
       </div>
     </nav>
     <main>
-      <!-- HERO -->
       <header class="hero" id="hero">
         <div class="hero-content">
           <div class="hero-logo">
@@ -79,7 +77,6 @@
         </svg>
       </div>
 
-      <!-- SOBRE NOSOTROS -->
       <section class="section about-wrapper" id="About">
         <h2>Sobre nosotros</h2>
 
@@ -141,7 +138,6 @@
         </div>
       </section>
 
-      <!-- CARRUSEL OBRAS -->
       <div class="photos">
         <div class="carousel-wrapper" id="Obras" data-animate>
           <div class="carousel" data-carousel>
@@ -233,7 +229,6 @@
         </div>
       </section>
 
-      <!-- CARRUSEL OPINIONES -->
       <section class="section light">
         <h2>Opiniones de clientes</h2>
         <div class="opinions-grid" id="Opiniones" data-animate>
@@ -252,7 +247,6 @@
         </div>
       </section>
 
-      <!-- CONTACTO -->
       <section id="Contacto" class="section" data-animate>
         <h2>Contacto</h2>
         <form class="contact-form" id="contactForm" novalidate>
@@ -280,7 +274,6 @@
       </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-item">
         <svg
@@ -379,7 +372,7 @@
       const next = document.querySelector(".next");
       const counter = document.getElementById("carouselCounter");
 
-      const gap = 16; // coincide con el gap del CSS
+      const gap = 16;
       let index = 0;
       const total = images.length;
 
@@ -403,7 +396,6 @@
       next.addEventListener("click", () => goTo(index + 1));
       prev.addEventListener("click", () => goTo(index - 1));
 
-      // 🔥 Detecta scroll manual (touch, trackpad, mouse)
       let scrollTimeout;
       carousel.addEventListener("scroll", () => {
         clearTimeout(scrollTimeout);
@@ -417,7 +409,6 @@
         }, 80);
       });
 
-      // estado inicial
       updateCounter();
     </script>
 
@@ -447,7 +438,7 @@
     </script>
     <script>
       const body = document.body;
-      const aboutSection = document.querySelector(".section"); // Sobre nosotros
+      const aboutSection = document.querySelector(".section");
 
       let lockedLight = false;
 
@@ -472,7 +463,6 @@
         }
       });
 
-      // estado inicial
       body.classList.add("dark");
     </script>
 
@@ -543,7 +533,6 @@
         const slider = ba.querySelector("input");
         const after = ba.querySelector(".after");
 
-        // empieza mostrando SOLO el antes
         slider.value = 0;
         after.style.clipPath = "inset(0 100% 0 0)";
 
@@ -644,7 +633,6 @@
     grid.appendChild(item);
   });
 
-  // 👇 Si faltan obras en la última página, rellenamos
   const missing = perPage - slice.length;
 
   if (missing > 0) {
